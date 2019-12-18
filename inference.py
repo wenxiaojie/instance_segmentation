@@ -59,21 +59,5 @@ for imgid in cocoGt.imgs:
             pred['score'] = float(outputs["instances"].scores[i])
             coco_dt.append(pred)
 
-with open("0856052_10.json", "w") as f:
+with open("0856052.json", "w") as f:
     json.dump(coco_dt, f)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
