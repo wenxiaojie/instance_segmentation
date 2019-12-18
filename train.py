@@ -17,7 +17,7 @@ register_coco_instances("mydataset_train", {}, "pascal_train.json", "train_image
 cfg = get_cfg()
 cfg.merge_from_file("/home/wenxiaojie/wenxiaojie_python/深度學習/深度學習HW4/"
                     "detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")
-cfg.MODEL.WEIGHTS = "data/pretrained_model/R-50.pkl"  # use imagemet pretrained model
+cfg.MODEL.WEIGHTS = "data/pretrained_model/R-50-GN.pkl"  # use imagemet pretrained model
 cfg.DATASETS.TRAIN = ("mydataset_train",)
 cfg.DATASETS.TEST = ()
 cfg.DATALOADER.NUM_WORKERS = 2
