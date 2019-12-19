@@ -34,7 +34,7 @@ cfg.MODEL.ROI_HEADS.NUM_CLASSES = 20  # 20 classes
 cfg.DATASETS.TRAIN = ("mydataset_train",)
 cfg.DATASETS.TEST = ("mydataset_test", )
 cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
-cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7   # sethe testing threshold for this model
+cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.6   # sethe testing threshold for this model
 predictor = DefaultPredictor(cfg)
 
 for imgid in cocoGt.imgs:
